@@ -1,0 +1,32 @@
+{
+  "name": "konfigbot-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "pkg . --out-path dist",
+    "start": "node ./bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "konfigbot": "./bin/index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "glob": "^7.1.3",
+    "js-yaml": "^3.12.0",
+    "minimist": "^1.2.0",
+    "ora": "^3.0.0",
+    "pkg": "^4.3.4",
+    "request-promise": "^4.2.2",
+    "shelljs": "^0.8.2",
+    "simple-git": "^1.96.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
